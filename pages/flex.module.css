@@ -1,0 +1,28 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  height: 1000px;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: orangered;
+  /* margin: 1px; */
+  /* flex: 1; */
+}
+.child:first-child {
+  /* flex-grow: 1; */
+  flex-basis: 200px;
+  /*
+  1200 - 3x - (x + 200) = 0
+  1200 - 200 - 4x = 0
+  1000 - 4x = 0
+  x = 250
+  */
+  /* flex-basis: 20%; */
+  /*
+  1200 x 0.2 = 240
+  */
+}
